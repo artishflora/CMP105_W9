@@ -4,6 +4,10 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
+#include "FallingManager.h"
+#include "BallManager.h"
+#include "Player.h"
+#include "BulletManager.h"
 
 
 class Level{
@@ -23,4 +27,9 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	BallManager ballManager;
+	FallingManager fallingManager;
+	Player player;
+	BulletManager bulletManager;
 };
